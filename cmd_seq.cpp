@@ -14,7 +14,7 @@ int main() {
     auto now = std::chrono::system_clock::to_time_t( std::chrono::system_clock::now() );
     
     std::cout << "[" << std::ctime(&now) << "] Robot: " << command << std::endl;
-    sleep(1);
+    sleep(2);
   }
   
   return 0;
