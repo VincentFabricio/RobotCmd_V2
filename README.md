@@ -1,4 +1,7 @@
 # RoboCmd - control your robot motion
+
+![img](.images/images.jpeg)
+
 This repository contains a C++ progrma to command your robot with different motions. 
 
 To correctly use this code the requirements are:
