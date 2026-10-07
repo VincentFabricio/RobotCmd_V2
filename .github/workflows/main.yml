@@ -1,0 +1,22 @@
+name: build-test
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+    % input for the dispatch
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout
+      - name: install dependencies
+        run: sudo apt update && sudo apt install -y cmake g++
+      - name: compilation
+        run: |
+          mkdir -p build
+          cd build
+          cmake ..
+          make
