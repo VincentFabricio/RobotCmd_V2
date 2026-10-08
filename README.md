@@ -1,5 +1,7 @@
 # RoboCmd - control your robot motion
 
+[![build-test](https://github.com/VincentFabricio/RobotCmd_V2/actions/workflows/main.yml/badge.svg)](https://github.com/VincentFabricio/RobotCmd_V2/actions/workflows/main.yml)
+
 ![img](.images/images.jpeg)
 
 This repository contains a C++ progrma to command your robot with different motions. 
