@@ -9,7 +9,7 @@
 
 int main() {
 
-	std::vector<std::string>cmds={"move forward", "turn left", "turn right", "move forward", "stop", "slow down", "speed up"}
+	std::vector<std::string>cmds={"move forward", "turn left", "turn right", "move forward", "stop", "slow down", "speed up"};
 
   for( const std::string& command: cmds ){
     
