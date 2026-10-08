@@ -20,7 +20,9 @@ jobs:
           git clone https://github.com/VincentFabricio/RobotCmd.git
           ls
       - name: clone external private repos
-        run: git clone https://github.com/VincentFabricio/readme.git
+        run: git clone https://x-access-token:$([secrets.PERSONAL_TOKEN])@github.com/VincentFabricio/readme.git
+      - name: list directories
+        run: ls
       - name: compilation
         run: |
           mkdir -p build
