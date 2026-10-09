@@ -29,3 +29,9 @@ jobs:
           cd build
           cmake ..
           make
+      - name: upload generated exec
+        uses: actions/upload-artifact@v4
+        with:
+          name: robot cmq seq executable
+          path: build/robot_cmq_seq
+          retention-days: 7
